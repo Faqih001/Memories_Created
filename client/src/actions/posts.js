@@ -61,6 +61,8 @@ export const likePost = (id) => async (dispatch) => {
 
   // Like a post using the api.likePost() method
   try {
+
+    // Destructure the data from the response object
     const { data } = await api.likePost(id);
 
     dispatch({ type: LIKE, payload: data });
