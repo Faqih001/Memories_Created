@@ -76,6 +76,8 @@ export const likePost = (id) => async (dispatch) => {
 
 // Delete a post and dispatch it to the reducer to update the state with the deleted post data (DELETE)
 export const deletePost = (id) => async (dispatch) => {
+
+  // Delete a post using the api.deletePost() method
   try {
     await api.deletePost(id);
 
