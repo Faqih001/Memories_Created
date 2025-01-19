@@ -83,6 +83,7 @@ export const deletePost = (id) => async (dispatch) => {
     // Destructure the data from the response object
     await api.deletePost(id);
 
+    // Dispatch the data to the reducer
     dispatch({ type: DELETE, payload: id });
   } catch (error) {
     console.log(error.message);
