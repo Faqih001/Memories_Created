@@ -21,6 +21,8 @@ export const getPosts = () => async (dispatch) => {
 
 // Create a new post and dispatch it to the reducer to update the state with the new post data (CREATE)
 export const createPost = (post) => async (dispatch) => {
+
+  // Create a new post using the api.createPost() method
   try {
     const { data } = await api.createPost(post);
 
