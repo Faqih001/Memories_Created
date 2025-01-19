@@ -11,6 +11,7 @@ export const getPosts = () => async (dispatch) => {
     // Destructure the data from the response object
     const { data } = await api.fetchPosts();
 
+    // Dispatch the data to the reducer
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
     console.log(error.message);
