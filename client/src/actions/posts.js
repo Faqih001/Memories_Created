@@ -79,6 +79,8 @@ export const deletePost = (id) => async (dispatch) => {
 
   // Delete a post using the api.deletePost() method
   try {
+
+    // Destructure the data from the response object
     await api.deletePost(id);
 
     dispatch({ type: DELETE, payload: id });
