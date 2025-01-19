@@ -28,6 +28,7 @@ export const createPost = (post) => async (dispatch) => {
     // Destructure the data from the response object 
     const { data } = await api.createPost(post);
 
+    // Dispatch the data to the reducer
     dispatch({ type: CREATE, payload: data });
   } catch (error) {
     console.log(error.message);
