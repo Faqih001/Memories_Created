@@ -43,6 +43,8 @@ export const updatePost = (id, post) => async (dispatch) => {
 
   // Update a post using the api.updatePost() method
   try {
+
+    // Destructure the data from the response object
     const { data } = await api.updatePost(id, post);
 
     dispatch({ type: UPDATE, payload: data });
