@@ -40,6 +40,8 @@ export const createPost = (post) => async (dispatch) => {
 
 // Update a post and dispatch it to the reducer to update the state with the updated post data (UPDATE)
 export const updatePost = (id, post) => async (dispatch) => {
+
+  // Update a post using the api.updatePost() method
   try {
     const { data } = await api.updatePost(id, post);
 
