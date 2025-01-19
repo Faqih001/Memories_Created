@@ -65,6 +65,7 @@ export const likePost = (id) => async (dispatch) => {
     // Destructure the data from the response object
     const { data } = await api.likePost(id);
 
+    // Dispatch the data to the reducer
     dispatch({ type: LIKE, payload: data });
   } catch (error) {
     console.log(error.message);
