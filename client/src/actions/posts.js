@@ -86,6 +86,8 @@ export const deletePost = (id) => async (dispatch) => {
     // Dispatch the data to the reducer
     dispatch({ type: DELETE, payload: id });
   } catch (error) {
+
+    // Log the error message to the console
     console.log(error.message);
   }
 };
