@@ -4,6 +4,8 @@ import * as api from '../api/index.js';
 
 // Get Posts from the backend and dispatch them to the reducer to update the state with the fetched posts data (FETCH_ALL)
 export const getPosts = () => async (dispatch) => {
+
+  // Fetch all posts from the backend using the api.fetchPosts() method
   try {
     const { data } = await api.fetchPosts();
 
