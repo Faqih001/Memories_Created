@@ -14,6 +14,7 @@ export const getPosts = () => async (dispatch) => {
     // Dispatch the data to the reducer
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
+
     // Log the error message to the console
     console.log(error.message);
   }
@@ -37,6 +38,7 @@ export const createPost = (post) => async (dispatch) => {
   }
 };
 
+// Update a post and dispatch it to the reducer to update the state with the updated post data (UPDATE)
 export const updatePost = (id, post) => async (dispatch) => {
   try {
     const { data } = await api.updatePost(id, post);
