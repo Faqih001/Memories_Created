@@ -50,6 +50,8 @@ export const updatePost = (id, post) => async (dispatch) => {
     // Dispatch the data to the reducer
     dispatch({ type: UPDATE, payload: data });
   } catch (error) {
+
+    // Log the error message to the console
     console.log(error.message);
   }
 };
