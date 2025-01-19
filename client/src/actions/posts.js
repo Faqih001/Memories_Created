@@ -56,6 +56,7 @@ export const updatePost = (id, post) => async (dispatch) => {
   }
 };
 
+// Like a post and dispatch it to the reducer to update the state with the liked post data (LIKE)
 export const likePost = (id) => async (dispatch) => {
   try {
     const { data } = await api.likePost(id);
