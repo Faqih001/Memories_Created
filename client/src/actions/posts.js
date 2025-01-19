@@ -14,6 +14,7 @@ export const getPosts = () => async (dispatch) => {
     // Dispatch the data to the reducer
     dispatch({ type: FETCH_ALL, payload: data });
   } catch (error) {
+    // Log the error message to the console
     console.log(error.message);
   }
 };
