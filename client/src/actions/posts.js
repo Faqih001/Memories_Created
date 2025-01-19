@@ -24,6 +24,8 @@ export const createPost = (post) => async (dispatch) => {
 
   // Create a new post using the api.createPost() method
   try {
+
+    // Destructure the data from the response object 
     const { data } = await api.createPost(post);
 
     dispatch({ type: CREATE, payload: data });
