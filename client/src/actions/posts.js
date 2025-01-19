@@ -7,6 +7,8 @@ export const getPosts = () => async (dispatch) => {
 
   // Fetch all posts from the backend using the api.fetchPosts() method
   try {
+
+    // Destructure the data from the response object
     const { data } = await api.fetchPosts();
 
     dispatch({ type: FETCH_ALL, payload: data });
