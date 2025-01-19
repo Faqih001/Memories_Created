@@ -47,6 +47,7 @@ export const updatePost = (id, post) => async (dispatch) => {
     // Destructure the data from the response object
     const { data } = await api.updatePost(id, post);
 
+    // Dispatch the data to the reducer
     dispatch({ type: UPDATE, payload: data });
   } catch (error) {
     console.log(error.message);
