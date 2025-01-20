@@ -39,6 +39,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
   // Handle the form submission using handleSubmit function
   const handleSubmit = async (e) => {
+
+    // Prevent the form from submitting
     e.preventDefault();
 
     if (currentId === 0) {
