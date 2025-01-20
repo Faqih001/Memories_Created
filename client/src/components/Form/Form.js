@@ -45,6 +45,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
     // Dispatch the createPost or updatePost action
     if (currentId === 0) {
+
+      // Dispatch the createPost action
       dispatch(createPost(postData));
       clear();
     } else {
