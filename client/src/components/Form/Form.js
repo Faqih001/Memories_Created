@@ -14,6 +14,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
   // Get the post from the state using useSelector hook and setPostData
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
+
+  // Dispatch the createPost and updatePost actions using useDispatch hook
   const dispatch = useDispatch();
   const classes = useStyles();
 
