@@ -21,6 +21,7 @@ const Form = ({ currentId, setCurrentId }) => {
   // Styles for the form using useStyles hook
   const classes = useStyles();
 
+  // Set the post data using useEffect hook
   useEffect(() => {
     if (post) setPostData(post);
   }, [post]);
