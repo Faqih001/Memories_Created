@@ -23,6 +23,7 @@ const Form = ({ currentId, setCurrentId }) => {
 
   // Set the post data using useEffect hook
   useEffect(() => {
+    // Set the post data using setPostData
     if (post) setPostData(post);
   }, [post]);
 
