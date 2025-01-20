@@ -29,6 +29,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
   // Clear the form data using clear function
   const clear = () => {
+
+    // Clear the form data using setPostData
     setCurrentId(0);
     setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   };
