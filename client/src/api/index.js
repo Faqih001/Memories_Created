@@ -9,7 +9,7 @@ export const fetchPosts = () => axios.get(url);
 // Create a new post using Post method and url endpoint
 export const createPost = (newPost) => axios.post(url, newPost);
 
-
+// Like a post using Patch method and url endpoint 
 export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
 
 
