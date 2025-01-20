@@ -17,6 +17,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
   // Dispatch the createPost and updatePost actions using useDispatch hook
   const dispatch = useDispatch();
+
+  // Styles for the form using useStyles hook
   const classes = useStyles();
 
   useEffect(() => {
