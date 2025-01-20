@@ -6,7 +6,7 @@ const url = 'http://localhost:5000/posts';
 // Fetch Posts using Get method and url endpoint 
 export const fetchPosts = () => axios.get(url);
 
-
+// Create a new post using Post method and url endpoint
 export const createPost = (newPost) => axios.post(url, newPost);
 
 
