@@ -48,6 +48,8 @@ const Form = ({ currentId, setCurrentId }) => {
 
       // Dispatch the createPost action
       dispatch(createPost(postData));
+
+      // Clear the form data
       clear();
     } else {
       dispatch(updatePost(currentId, postData));
