@@ -3,7 +3,7 @@ import axios from 'axios';
 // URL to the backend server API endpoint for posts
 const url = 'http://localhost:5000/posts';
 
-
+// Fetch Posts using Get method and url endpoint 
 export const fetchPosts = () => axios.get(url);
 
 
