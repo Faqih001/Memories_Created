@@ -15,5 +15,5 @@ export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
 // Update a post using Patch method and url endpoint
 export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
 
-
+// Delete a post using Delete method and url endpoint
 export const deletePost = (id) => axios.delete(`${url}/${id}`);
