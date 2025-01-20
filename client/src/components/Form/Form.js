@@ -43,6 +43,7 @@ const Form = ({ currentId, setCurrentId }) => {
     // Prevent the form from submitting
     e.preventDefault();
 
+    // Dispatch the createPost or updatePost action
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
