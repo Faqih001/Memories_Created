@@ -8,6 +8,8 @@ import { createPost, updatePost } from '../../actions/posts';
 
 // Form component for creating and updating posts in the database 
 const Form = ({ currentId, setCurrentId }) => {
+
+  // State for the form data using useState hook for post Data and setPostData
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
