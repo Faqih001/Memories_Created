@@ -12,7 +12,7 @@ export const createPost = (newPost) => axios.post(url, newPost);
 // Like a post using Patch method and url endpoint 
 export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
 
-
+// Update a post using Patch method and url endpoint
 export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
 
 
