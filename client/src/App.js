@@ -27,6 +27,7 @@ const App = () => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
 
+  //  Return the app using Container, AppBar, Typography, Grow, Grid, Posts, Form, and memories
   return (
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
