@@ -10,6 +10,8 @@ const Posts = ({ setCurrentId }) => {
 
   // Get the posts from the state using useSelector hook
   const posts = useSelector((state) => state.posts);
+
+  // Styles for the posts using useStyles hook
   const classes = useStyles();
 
   return (
