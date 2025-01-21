@@ -13,6 +13,8 @@ const App = () => {
 
   // Current ID state using useState hook
   const [currentId, setCurrentId] = useState(0);
+
+  // Dispatch using useDispatch hook
   const dispatch = useDispatch();
   const classes = useStyles();
 
