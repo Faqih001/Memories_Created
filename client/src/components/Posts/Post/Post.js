@@ -11,6 +11,8 @@ import useStyles from './styles';
 
 // Post component for displaying a single post with the post data and actions
 const Post = ({ post, setCurrentId }) => {
+
+  // Dispatch the likePost and deletePost actions using useDispatch hook
   const dispatch = useDispatch();
   const classes = useStyles();
 
