@@ -6,6 +6,7 @@ import PostMessage from '../models/postMessage.js';
 // Create a router object to handle the routes for the posts
 const router = express.Router();
 
+// Get all posts from the database using PostMessage.find()
 export const getPosts = async (req, res) => { 
     try {
         const postMessages = await PostMessage.find();
