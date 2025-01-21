@@ -7,6 +7,8 @@ import useStyles from './styles';
 
 // Posts component for displaying all the posts using Grid, CircularProgress, useSelector, and Post
 const Posts = ({ setCurrentId }) => {
+
+  // Get the posts from the state using useSelector hook
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
 
