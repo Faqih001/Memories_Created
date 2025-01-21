@@ -18,6 +18,7 @@ const Post = ({ post, setCurrentId }) => {
   // Styles for the post using useStyles hook
   const classes = useStyles();
 
+  // Return the post data and actions using Card, CardMedia, CardActions, CardContent, Button, Typography, ThumbUpAltIcon, DeleteIcon, MoreHorizIcon, moment, and useStyles
   return (
     <Card className={classes.card}>
       <CardMedia className={classes.media} image={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} title={post.title} />
