@@ -20,6 +20,7 @@ const App = () => {
   // Styles for the app using useStyles hook
   const classes = useStyles();
 
+  // useEffect hook for dispatching getPosts
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
