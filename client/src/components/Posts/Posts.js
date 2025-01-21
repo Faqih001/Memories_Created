@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import Post from './Post/Post';
 import useStyles from './styles';
 
+// Posts component for displaying all the posts using Grid, CircularProgress, useSelector, and Post
 const Posts = ({ setCurrentId }) => {
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
