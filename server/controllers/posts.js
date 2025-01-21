@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 
 import PostMessage from '../models/postMessage.js';
 
+// Create a router object to handle the routes for the posts
 const router = express.Router();
 
 export const getPosts = async (req, res) => { 
