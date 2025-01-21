@@ -10,6 +10,8 @@ import memories from './images/memories.png';
 
 // App component for displaying the app using Container, AppBar, Typography, Grow, Grid, Posts, Form, getPosts, and useStyles
 const App = () => {
+
+  // Current ID state using useState hook
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
