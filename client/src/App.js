@@ -22,6 +22,8 @@ const App = () => {
 
   // useEffect hook for dispatching getPosts
   useEffect(() => {
+
+    // Dispatch getPosts
     dispatch(getPosts());
   }, [currentId, dispatch]);
 
