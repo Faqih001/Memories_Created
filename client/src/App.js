@@ -16,6 +16,8 @@ const App = () => {
 
   // Dispatch using useDispatch hook
   const dispatch = useDispatch();
+
+  // Styles for the app using useStyles hook
   const classes = useStyles();
 
   useEffect(() => {
