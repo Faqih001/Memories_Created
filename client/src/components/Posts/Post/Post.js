@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { likePost, deletePost } from '../../../actions/posts';
 import useStyles from './styles';
 
+// Post component for displaying a single post with the post data and actions
 const Post = ({ post, setCurrentId }) => {
   const dispatch = useDispatch();
   const classes = useStyles();
