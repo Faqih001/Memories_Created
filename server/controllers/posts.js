@@ -8,6 +8,8 @@ const router = express.Router();
 
 // Get all posts from the database using PostMessage.find()
 export const getPosts = async (req, res) => { 
+
+    // Try to get all post messages from the database
     try {
         const postMessages = await PostMessage.find();
                 
