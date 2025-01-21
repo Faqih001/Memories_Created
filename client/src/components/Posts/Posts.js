@@ -14,6 +14,7 @@ const Posts = ({ setCurrentId }) => {
   // Styles for the posts using useStyles hook
   const classes = useStyles();
 
+  // Return the posts using Grid, CircularProgress, and Post
   return (
     !posts.length ? <CircularProgress /> : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
