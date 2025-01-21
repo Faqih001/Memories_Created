@@ -1,5 +1,6 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
 
+// The reducer is a function that accepts the state and an action and returns the new state.
 export default (posts = [], action) => {
   switch (action.type) {
     case FETCH_ALL:
