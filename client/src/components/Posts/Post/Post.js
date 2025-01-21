@@ -14,6 +14,8 @@ const Post = ({ post, setCurrentId }) => {
 
   // Dispatch the likePost and deletePost actions using useDispatch hook
   const dispatch = useDispatch();
+
+  // Styles for the post using useStyles hook
   const classes = useStyles();
 
   return (
