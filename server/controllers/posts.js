@@ -11,6 +11,8 @@ export const getPosts = async (req, res) => {
 
     // Try to get all post messages from the database
     try {
+
+        // Post Messages for all posts in the database are stored in the postMessages variable 
         const postMessages = await PostMessage.find();
                 
         res.status(200).json(postMessages);
