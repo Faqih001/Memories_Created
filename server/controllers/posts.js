@@ -56,6 +56,8 @@ export const createPost = async (req, res) => {
 
     // Try to save the new post message to the database
     try {
+
+        // Save the new post message to the database
         await newPostMessage.save();
 
         res.status(201).json(newPostMessage );
