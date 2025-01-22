@@ -60,6 +60,7 @@ export const createPost = async (req, res) => {
         // Save the new post message to the database
         await newPostMessage.save();
 
+        // Send the new post message as a JSON response to the client
         res.status(201).json(newPostMessage );
     } catch (error) {
         res.status(409).json({ message: error.message });
