@@ -84,6 +84,7 @@ export const updatePost = async (req, res) => {
     // Create an updatedPost object with the creator, title, message, tags, selectedFile, and id
     const updatedPost = { creator, title, message, tags, selectedFile, _id: id };
 
+    // Find the post message by id and update it with the updatedPost object
     await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
 
     res.json(updatedPost);
