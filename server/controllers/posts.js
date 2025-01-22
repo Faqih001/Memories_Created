@@ -51,6 +51,7 @@ export const createPost = async (req, res) => {
     // Get the title, message, selectedFile, creator, and tags from the request body
     const { title, message, selectedFile, creator, tags } = req.body;
 
+    // Create a new PostMessage object with the title, message, selectedFile, creator, and tags
     const newPostMessage = new PostMessage({ title, message, selectedFile, creator, tags })
 
     try {
