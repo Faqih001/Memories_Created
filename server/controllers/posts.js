@@ -87,6 +87,7 @@ export const updatePost = async (req, res) => {
     // Find the post message by id and update it with the updatedPost object
     await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
 
+    // Send the updated post message as a JSON response to the client
     res.json(updatedPost);
 }
 
