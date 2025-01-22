@@ -39,6 +39,8 @@ export const getPost = async (req, res) => {
         // Send the post as a JSON response to the client
         res.status(200).json(post);
     } catch (error) {
+
+        // If there is an error, send a 404 status code and a JSON object with the error message
         res.status(404).json({ message: error.message });
     }
 }
