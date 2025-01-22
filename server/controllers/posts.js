@@ -26,6 +26,8 @@ export const getPosts = async (req, res) => {
 
 // Get a single post from the database using PostMessage.findById() and the id of the post
 export const getPost = async (req, res) => { 
+
+    // Get the id of the post from the request parameters 
     const { id } = req.params;
 
     try {
