@@ -71,6 +71,8 @@ export const createPost = async (req, res) => {
 
 // Update a post in the database using PostMessage.findByIdAndUpdate() and the id of the post
 export const updatePost = async (req, res) => {
+
+    // Get the id, title, message, selectedFile, creator, and tags from the request parameters and body
     const { id } = req.params;
     const { title, message, creator, selectedFile, tags } = req.body;
     
