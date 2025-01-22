@@ -47,6 +47,8 @@ export const getPost = async (req, res) => {
 
 // Create a new post in the database using PostMessage.save()
 export const createPost = async (req, res) => {
+
+    // Get the title, message, selectedFile, creator, and tags from the request body
     const { title, message, selectedFile, creator, tags } = req.body;
 
     const newPostMessage = new PostMessage({ title, message, selectedFile, creator, tags })
