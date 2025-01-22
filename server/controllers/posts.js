@@ -74,6 +74,8 @@ export const updatePost = async (req, res) => {
 
     // Get the id, title, message, selectedFile, creator, and tags from the request parameters and body
     const { id } = req.params;
+
+    // Get the title, message, selectedFile, creator, and tags from the request body
     const { title, message, creator, selectedFile, tags } = req.body;
     
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
