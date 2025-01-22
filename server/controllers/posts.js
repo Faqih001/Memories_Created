@@ -14,7 +14,8 @@ export const getPosts = async (req, res) => {
 
         // Post Messages for all posts in the database are stored in the postMessages variable 
         const postMessages = await PostMessage.find();
-                
+              
+        // Send the postMessages as a JSON response to the client 
         res.status(200).json(postMessages);
     } catch (error) {
         res.status(404).json({ message: error.message });
