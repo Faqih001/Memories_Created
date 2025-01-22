@@ -63,6 +63,8 @@ export const createPost = async (req, res) => {
         // Send the new post message as a JSON response to the client
         res.status(201).json(newPostMessage );
     } catch (error) {
+
+        // If there is an error, send a 409 status code and a JSON object with the error message
         res.status(409).json({ message: error.message });
     }
 }
