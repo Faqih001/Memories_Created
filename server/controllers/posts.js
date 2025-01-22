@@ -81,6 +81,7 @@ export const updatePost = async (req, res) => {
     // Check if the id is a valid mongoose id using mongoose.Types.ObjectId.isValid()
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
 
+    // Create an updatedPost object with the creator, title, message, tags, selectedFile, and id
     const updatedPost = { creator, title, message, tags, selectedFile, _id: id };
 
     await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
