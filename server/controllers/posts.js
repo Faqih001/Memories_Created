@@ -36,6 +36,7 @@ export const getPost = async (req, res) => {
         // Post Message for the post with the id is stored in the post variable
         const post = await PostMessage.findById(id);
         
+        // Send the post as a JSON response to the client
         res.status(200).json(post);
     } catch (error) {
         res.status(404).json({ message: error.message });
