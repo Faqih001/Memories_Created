@@ -109,6 +109,8 @@ export const deletePost = async (req, res) => {
 
 // Like a post using PostMessage.findByIdAndUpdate() and the id of the post
 export const likePost = async (req, res) => {
+
+    // Get the id of the post from the request parameters 
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
