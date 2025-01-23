@@ -100,6 +100,7 @@ export const deletePost = async (req, res) => {
     // Check if the id is a valid mongoose id using mongoose.Types.ObjectId.isValid()
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
 
+    // Find the post message by id and remove it from the database
     await PostMessage.findByIdAndRemove(id);
 
     res.json({ message: "Post deleted successfully." });
