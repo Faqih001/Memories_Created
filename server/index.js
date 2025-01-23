@@ -17,6 +17,7 @@ app.use(cors());
 // Use the postRoutes for all routes that start with /posts
 app.use('/posts', postRoutes);
 
+// Set the connection URL for the database and the port for the server
 const CONNECTION_URL = 'mongodb+srv://js_mastery:123123123@practice.jto9p.mongodb.net/test';
 const PORT = process.env.PORT|| 5000;
 
