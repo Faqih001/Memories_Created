@@ -107,6 +107,7 @@ export const deletePost = async (req, res) => {
     res.json({ message: "Post deleted successfully." });
 }
 
+// Like a post using PostMessage.findByIdAndUpdate() and the id of the post
 export const likePost = async (req, res) => {
     const { id } = req.params;
 
