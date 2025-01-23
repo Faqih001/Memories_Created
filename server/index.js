@@ -6,6 +6,7 @@ import cors from 'cors';
 
 import postRoutes from './routes/posts.js';
 
+// Create a new express application 
 const app = express();
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
