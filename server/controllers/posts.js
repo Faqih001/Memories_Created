@@ -116,6 +116,7 @@ export const likePost = async (req, res) => {
     // Check if the id is a valid mongoose id using mongoose.Types.ObjectId.isValid()
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
     
+    // Find the post message by id and increment the likeCount by 1
     const post = await PostMessage.findById(id);
 
     const updatedPost = await PostMessage.findByIdAndUpdate(id, { likeCount: post.likeCount + 1 }, { new: true });
