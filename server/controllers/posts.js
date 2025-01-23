@@ -122,6 +122,7 @@ export const likePost = async (req, res) => {
     // Update the post message with the new likeCount and return the updated post message
     const updatedPost = await PostMessage.findByIdAndUpdate(id, { likeCount: post.likeCount + 1 }, { new: true });
     
+    // Send the updated post message as a JSON response to the client
     res.json(updatedPost);
 }
 
