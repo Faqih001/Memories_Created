@@ -91,6 +91,7 @@ export const updatePost = async (req, res) => {
     res.json(updatedPost);
 }
 
+// Delete a post from the database using PostMessage.findByIdAndRemove() and the id of the post
 export const deletePost = async (req, res) => {
     const { id } = req.params;
 
