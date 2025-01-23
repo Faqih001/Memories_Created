@@ -5,6 +5,7 @@ import { getPosts, getPost, createPost, updatePost, likePost, deletePost } from 
 // Create a router object to handle the routes for the posts
 const router = express.Router();
 
+// Get all posts from the database using PostMessage.find()
 router.get('/', getPosts);
 router.post('/', createPost);
 router.get('/:id', getPost);
