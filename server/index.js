@@ -9,6 +9,7 @@ import postRoutes from './routes/posts.js';
 // Create a new express application 
 const app = express();
 
+// Use the body-parser middleware to parse the request body
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
