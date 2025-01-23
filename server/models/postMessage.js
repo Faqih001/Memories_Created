@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+// Create a new mongoose schema for the post with the title, message, creator, tags, selectedFile, likeCount, and createdAt
 const postSchema = mongoose.Schema({
     title: String,
     message: String,
