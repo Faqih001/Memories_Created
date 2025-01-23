@@ -93,6 +93,8 @@ export const updatePost = async (req, res) => {
 
 // Delete a post from the database using PostMessage.findByIdAndRemove() and the id of the post
 export const deletePost = async (req, res) => {
+
+    // Get the id of the post from the request parameters
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
